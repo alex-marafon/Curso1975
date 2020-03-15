@@ -5,8 +5,14 @@ namespace Pagamento.Domain.Entities
     public abstract class Pagamento 
     //abstract nao deixa estancia direto, pede um dos tipos a baixa junto.
     {
+        //segue mesmo modelo estruturado na entiti "Estudante"
         protected Pagamento(DateTime dataPagamento, DateTime dataExpira, decimal total, decimal totalpago, string pagador, string documento, string endereco, string email)
         {
+           //NewGuid - Gerando Id da entiti
+           //ToString - Converte pra string
+           //Replace - Remove "-" e deixa " " vazio.
+           //Substring - Pega os 10 primeiros caracteres
+           //ToUpper - Deixa em caixa Alta 
             Numero = Guid.NewGuid().ToString().Replace("-","").Substring(0,10).ToUpper();
             DataPagamento = dataPagamento;
             DataExpira = dataExpira;
@@ -17,6 +23,8 @@ namespace Pagamento.Domain.Entities
             Endereco = endereco;
             Email = email;
         }
+
+        //https://app.balta.io/player/1975/modules/1/classes/8
 
         public string Numero { get; private set; }
         public DateTime DataPagamento { get; private set; }
@@ -29,20 +37,5 @@ namespace Pagamento.Domain.Entities
         public string Email { get; private set; }
 
     }
-    public class Boleto : Pagamento
-    {
-        public string CodigoBarra { get; set; }
-        public string NumeroBoleto { get; set; }
-
-    }
-    public class Cartao : Pagamento
-    {
-        public string NomeTitular { get; set; }
-        public string NumeroCartao { get; set; } //so os 4 ultimos digitor
-        public string NumeroUltimaTranzacao { get; set; }
-    }
-    public class PayPay : Pagamento
-    {
-        public string CodigoTranzacao { get; set; }
-    }
+    
 }
