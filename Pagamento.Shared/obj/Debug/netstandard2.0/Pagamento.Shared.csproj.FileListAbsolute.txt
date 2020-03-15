@@ -1,0 +1,8 @@
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\bin\Debug\netstandard2.0\Pagamento.Shared.deps.json
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\bin\Debug\netstandard2.0\Pagamento.Shared.dll
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\bin\Debug\netstandard2.0\Pagamento.Shared.pdb
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\obj\Debug\netstandard2.0\Pagamento.Shared.csprojAssemblyReference.cache
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\obj\Debug\netstandard2.0\Pagamento.Shared.AssemblyInfoInputs.cache
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\obj\Debug\netstandard2.0\Pagamento.Shared.AssemblyInfo.cs
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\obj\Debug\netstandard2.0\Pagamento.Shared.dll
+C:\Users\Trut4's\Desktop\ModelagemDominioRico\Curso1975\Pagamento.Shared\obj\Debug\netstandard2.0\Pagamento.Shared.pdb
