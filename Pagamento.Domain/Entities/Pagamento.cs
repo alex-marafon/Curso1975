@@ -1,4 +1,5 @@
 using System;
+using Pagamento.Domain.ValidadandoObjetos;
 
 namespace Pagamento.Domain.Entities
 {
@@ -6,7 +7,7 @@ namespace Pagamento.Domain.Entities
     //abstract nao deixa estancia direto, pede um dos tipos a baixa junto.
     {
         //segue mesmo modelo estruturado na entiti "Estudante"
-        protected Pagamento(DateTime dataPagamento, DateTime dataExpira, decimal total, decimal totalpago, string pagador, string documento, string endereco, string email)
+        protected Pagamento(DateTime dataPagamento, DateTime dataExpira, decimal total, decimal totalpago, string pagador, Documento documento, string endereco, string email)
         {
            //NewGuid - Gerando Id da entiti
            //ToString - Converte pra string
@@ -32,7 +33,7 @@ namespace Pagamento.Domain.Entities
         public decimal Total { get; private set; }
         public decimal Totalpago { get; private set; }
         public string Pagador { get; private set; }
-        public string Documento { get; private set; }
+        public Documento Documento { get; private set; }
         public string Endereco { get; private set; }
         public string Email { get; private set; }
 

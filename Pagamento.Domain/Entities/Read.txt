@@ -1,0 +1,29 @@
+Aula 10 trabalhando com "Tipo Primitivos" Ex. decimal, string, bool e etc.
+
+Exemplo do nosso caso de uso e o email, validação do email em varias Entidades
+    Obs -> Estudar metodo   "if(Regex.math)" - comentado na aula, não conheço.
+
+Obsessao por tipos primitivos - "Primitive Obsession"
+
+
+Criamos um nova pasta, "ValidadandoObjetos"  e criamos a class de validadaçao
+Esta class tem metodo construtur, e tem as propriedades a qual queremos validar,
+Na entiti que utilizaremos a validação nao removemos a propriedade mais sim editamos
+ao inves de usar o tipo primitivo "string, decimal e etc.." referenciamos a class de validadaçao
+o nome da class substitui o tipo na entiti destino, Ex.
+        ValidadandoObjetos/"Class" Nome
+        Esta sendo usada na Entiti Estudante a propriedade fica - "public Nome Nome { get; private set; }"
+        Lembrando que tbm deve ser editado no construtor da class a qual foi utilizado a validação. Seguindo o exemplo.
+        Exemplo: Trexo do codigo Entiti Estudante.
+
+             public Estudante(Nome nome,....)
+            {
+                Nome = nome;
+                ....
+            }
+            public Nome Nome { get; private set; }
+            .....
+
+Criamos a Class Documento a qual recebe o tipo de uma class "Enum" para itendificar o tipo de documento CPF ou CNPJ
+Replicando essa mudança a todas as propriedades "Documento" da mesma forma que mostrado acima. 
+Observe os contrutores tbm devem ser alterados juntamente com a propriedade e referenciado.

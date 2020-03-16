@@ -1,4 +1,5 @@
 using System;
+using Pagamento.Domain.ValidadandoObjetos;
 
 namespace Pagamento.Domain.Entities
 { 
@@ -17,7 +18,7 @@ namespace Pagamento.Domain.Entities
             decimal total, 
             decimal totalpago, 
             string pagador, 
-            string documento, 
+            Documento documento,
             string endereco, 
             string email): base( 
                 dataPagamento,  

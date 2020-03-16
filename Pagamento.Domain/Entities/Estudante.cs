@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Pagamento.Domain.ValidadandoObjetos;
 
 namespace Pagamento.Domain.Entities
 {
@@ -7,7 +8,7 @@ namespace Pagamento.Domain.Entities
     {
         private IList<Assinatura> _assinaturas; //"Passo 1"
         //criamos uma lista privada e atrobuimos a '_assinaturas'
-        public Estudante(string nome, string sobreNome, string documento, string email)
+        public Estudante(Nome nome, string sobreNome, Documento documento, string email)
         {
             Nome = nome;
             SobreNome = sobreNome;
@@ -17,9 +18,9 @@ namespace Pagamento.Domain.Entities
             //Iniciamos ela junto ao construtor 
         }
 
-        public string Nome { get; private set; }
+        public Nome Nome { get; private set; }
         public string SobreNome { get;  private set; }
-        public string Documento { get; private set; }
+        public Documento Documento { get; private set; }
         public string Email { get; private set; }
         public string Endereco { get; private set; }
 
